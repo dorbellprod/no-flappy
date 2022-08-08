@@ -14,6 +14,7 @@ FLAP_SPEED = 12
 # Pygame and loop initialization
 pygame.init()
 screen = pygame.display.set_mode(WIN_SIZE)
+pygame.display.set_caption("Poly Flap DREAM Tutorial!", )
 run = True
 clock = pygame.time.Clock()
 
@@ -21,6 +22,7 @@ clock = pygame.time.Clock()
 s_player = pygame.image.load("./brick.jpg")#.convert_alpha()
 s_player = pygame.transform.scale(s_player, (PLAYER_W, PLAYER_H))
 s_pipe = pygame.image.load("./pipes.png").convert_alpha()
+pygame.display.set_icon(s_player)
 
 # Fonts
 # f_font = pygame.font.Font("Font/Toon Around.otf", 35)
