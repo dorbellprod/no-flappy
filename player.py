@@ -18,7 +18,6 @@ class Player:
 
 class Pipe:
     def __init__(self, x, width, height):
-
         self.x = x # Starts rendering from the top-left, so set x to leftmost x coordinate
         self.randomize()
         self.width = width
